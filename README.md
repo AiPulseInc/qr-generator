@@ -42,7 +42,19 @@
 
 ## Screenshots
 
-*(Coming soon - add screenshots of the app in action)*
+### App Store Screenshots
+
+Professional screenshots ready for App Store submission:
+
+<div align="center">
+
+| URL QR Code | WiFi Sharing | Calendar Event | Email QR Code | Dark Mode |
+|:-----------:|:------------:|:--------------:|:-------------:|:---------:|
+| ![URL](screenshots/app-store/01-url-qr-code.png) | ![WiFi](screenshots/app-store/02-wifi-qr-code.png) | ![Calendar](screenshots/app-store/03-calendar-event.png) | ![Email](screenshots/app-store/04-email-qr-code.png) | ![Dark](screenshots/app-store/05-dark-mode.png) |
+
+</div>
+
+**See [screenshots/README.md](./screenshots/README.md) for complete details and App Store submission guidelines.**
 
 ---
 

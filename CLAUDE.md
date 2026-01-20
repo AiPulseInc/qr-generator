@@ -46,8 +46,16 @@
 
 ### Important URLs (To Be Set Up)
 - **Privacy Policy URL:** TBD (must host PRIVACY_POLICY.md before submission)
-- **Support URL:** TBD (can use GitHub repo or create dedicated page)
+- **Support URL:** https://github.com/AiPulseInc/qr-generator (can use for initial submission)
 - **Marketing URL:** TBD (optional)
+
+### GitHub Repository
+- **Repository:** https://github.com/AiPulseInc/qr-generator
+- **SSH URL:** git@github.com:AiPulseInc/qr-generator.git
+- **Default Branch:** main
+- **Initial Commit:** 2026-01-20 (97 files, 28,564 lines)
+- **Git User:** AiPulse Inc <info@aipulse.pl>
+- **SSH Key Fingerprint:** SHA256:eomzYPo8d0Y1+T3CLN/5W1DDMPHDW++Zhz7Tm9zpAOc
 
 ---
 

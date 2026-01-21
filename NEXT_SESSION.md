@@ -1,9 +1,10 @@
 # Next Session Guide - QRGenerator
 
-**Last Updated:** 2026-01-19
+**Last Updated:** 2026-01-20
 **Project Status:** App Store submission preparation phase
 **Development Status:** Application code COMPLETE
 **Documentation Status:** COMPLETE
+**Screenshots Status:** ✅ COMPLETE (5 App Store-ready PNG screenshots)
 
 ---
 
@@ -11,7 +12,14 @@
 
 You're working on **QRGenerator**, a complete and production-ready React Native QR code generator app. The application development is 100% finished. The current phase is **preparing for App Store submission**.
 
-In the last session (2026-01-19), we created a comprehensive 5-document package that guides a first-time iOS publisher through the entire App Store submission process.
+In the last session (2026-01-20), we:
+- Updated all contact information to info@aipulse.pl (5 documentation files)
+- Changed Apple ID from maciek@konieczny.pl to info@aipulse.pl
+- Connected project to GitHub: https://github.com/AiPulseInc/qr-generator
+- Replaced non-compliant screenshots with 5 App Store-ready PNG screenshots (1290x2796)
+- Updated README.md with screenshot gallery
+
+Previous session (2026-01-19): Created a comprehensive 5-document package that guides a first-time iOS publisher through the entire App Store submission process.
 
 ---
 
@@ -50,66 +58,65 @@ In the last session (2026-01-19), we created a comprehensive 5-document package 
 
 ---
 
-### 2. GENERATE APP SCREENSHOTS [HIGH PRIORITY]
+### 2. GENERATE APP SCREENSHOTS ✅ COMPLETED (2026-01-20)
 
-**What's Needed:**
-- Screenshots of the app in action
-- Multiple sizes required for different iPhone models
+**Status:** COMPLETE - 5 App Store-ready screenshots created
 
-**Required Sizes (Minimum):**
-- 6.9" iPhone (2868 x 1320 px) - iPhone 16 Pro Max
-- 6.7" iPhone (2778 x 1284 px) - iPhone 14 Pro Max / 15 Plus
+**What Was Completed:**
+- Created 5 PNG screenshots in Release mode (no Metro banner)
+- Size: 1290x2796 (6.7" iPhone Pro Max)
+- Format: PNG (App Store preferred)
+- File sizes: 156KB - 185KB each
 
-**Recommended Additional Sizes:**
-- 6.5" iPhone (2778 x 1242 px) - iPhone 11 Pro Max
-- 5.5" iPhone (2208 x 1242 px) - iPhone 8 Plus
+**Screenshots Created:**
+1. ✅ 01-url-qr-code.png - Main screen with URL QR code
+2. ✅ 02-wifi-qr-code.png - WiFi network sharing
+3. ✅ 03-calendar-event.png - Calendar event creation
+4. ✅ 04-email-qr-code.png - Email QR code
+5. ✅ 05-dark-mode.png - Dark theme demonstration
 
-**Content to Capture:**
-1. Hero shot - URL QR code generation (default screen)
-2. WiFi QR code - Show network sharing feature
-3. Calendar event - Date picker and QR preview
-4. SMS/Email - Communication QR codes
-5. Settings panel - Customization options visible
-6. Export/Share - Action sheet or share dialog
+**Location:**
+- `/Users/mk/code-sandbox/QRGenerator/screenshots/app-store/`
+- Also available in: `/Users/mk/code-sandbox/QRGenerator/screen/`
 
-**Process:**
-1. Run app on iOS simulator
-2. Select appropriate device size
-3. Navigate to each feature
-4. Take screenshots (Cmd+S in simulator)
-5. Optional: Add device frames using tools like:
-   - Apple Frameworks (screenshots.pro)
-   - Previewed.app
-   - Rotato
+**Quality Standards Met:**
+- ✅ No development overlays (Metro banner removed)
+- ✅ Clean UI with 321 GROW branding
+- ✅ Production-ready appearance
+- ✅ All 5 QR code types showcased
+- ✅ Ready for App Store Connect upload
 
-**Reference:**
-- Follow detailed guide in `APP_STORE_SCREENSHOTS_GUIDE.md`
-- Maintain dark theme for brand consistency
-- Ensure 321 GROW branding visible in screenshots
-
-**Deliverable:**
-- 6 screenshots per required size
-- Organized in folder: `/ios/AppStoreAssets/Screenshots/`
-- Named systematically: `01-hero-6.9.png`, `02-wifi-6.9.png`, etc.
+**Optional Enhancement:**
+- Could add 6.9" size for newest iPhones (not required, current size is sufficient)
 
 ---
 
-### 3. HOST PRIVACY POLICY [HIGH PRIORITY]
+### 3. HOST PRIVACY POLICY [HIGH PRIORITY - NEXT CRITICAL TASK]
 
 **What's Needed:**
 - Public URL where `PRIVACY_POLICY.md` is accessible
 - HTTPS required
 - Must be accessible before App Store Connect submission
 
+**Current Status:**
+- ✅ Privacy policy document complete and updated with info@aipulse.pl
+- ⏳ Needs to be hosted on public URL
+
 **Options:**
 
 **Option A: GitHub Pages (Recommended - Free & Easy)**
 ```bash
-# If you have a GitHub account:
+# You already have GitHub repository: https://github.com/AiPulseInc/qr-generator
+# Option 1: Enable GitHub Pages for this repo
+#   - Settings → Pages → Source: main branch → /docs or root
+#   - Move PRIVACY_POLICY.md to docs/index.md (or convert to HTML)
+#   - URL: https://aipulseinc.github.io/qr-generator/
+
+# Option 2: Create separate privacy repo
 1. Create new repo: qrgenerator-privacy
 2. Add PRIVACY_POLICY.md (rename to index.md or convert to HTML)
 3. Enable GitHub Pages in repo settings
-4. URL will be: https://[username].github.io/qrgenerator-privacy
+4. URL will be: https://aipulseinc.github.io/qrgenerator-privacy
 ```
 
 **Option B: Netlify (Also Free)**
@@ -136,6 +143,8 @@ If you have a website (e.g., 321grow.pl):
 
 ### 4. VERIFY APPLE DEVELOPER ACCOUNT STATUS [MEDIUM PRIORITY]
 
+**Important:** Use Apple ID info@aipulse.pl (updated from maciek@konieczny.pl on 2026-01-20)
+
 **Action Items:**
 1. Check enrollment status at [developer.apple.com](https://developer.apple.com)
 2. Confirm annual fee paid ($99/year)
@@ -147,11 +156,13 @@ If you have a website (e.g., 321grow.pl):
 - Follow instructions in `APP_STORE_SUBMISSION_GUIDE.md` Section 2
 - Budget for $99/year fee
 - Prepare for identity verification (can take 24-48 hours)
+- Use info@aipulse.pl as Apple ID
 
 **Deliverable:**
 - Confirmed access to Apple Developer portal
 - Confirmed access to App Store Connect
 - All agreements accepted
+- Apple ID confirmed as info@aipulse.pl
 
 ---
 
@@ -162,19 +173,24 @@ If you have a website (e.g., 321grow.pl):
 - Apple Developer account active
 - Enrolled in Apple Developer Program
 
+**IMPORTANT:** Before starting, update Xcode Preferences → Accounts
+- Remove old Apple ID: maciek@konieczny.pl (if present)
+- Add new Apple ID: info@aipulse.pl
+- Download signing certificates for info@aipulse.pl account
+
 **Configuration Steps:**
 
 **A. Set Bundle Identifier**
 - Open `/Users/mk/code-sandbox/QRGenerator/ios/QRGenerator.xcworkspace` in Xcode
 - Select project in navigator
 - Choose "QRGenerator" target
-- Set unique bundle ID: `com.321techlab.qrgenerator` (or your preference)
+- Set unique bundle ID: `com.aipulse.qrgenerator` or `com.321techlab.qrgenerator`
 - Must be unique across App Store
 
 **B. Configure Signing**
 - In same location, go to "Signing & Capabilities" tab
 - Check "Automatically manage signing"
-- Select your development team
+- Select your development team (associated with info@aipulse.pl)
 - Xcode will generate certificates and profiles
 
 **C. Set Version Information**
@@ -391,5 +407,5 @@ Update the following files:
 ---
 
 **File Location:** `/Users/mk/code-sandbox/QRGenerator/NEXT_SESSION.md`
-**Last Updated:** 2026-01-19
-**Next Review:** After completing priority items #1-5
+**Last Updated:** 2026-01-20
+**Next Review:** After hosting privacy policy and verifying app icon

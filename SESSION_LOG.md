@@ -229,6 +229,330 @@ None
 
 ---
 
+## Session 2026-01-20: Contact Updates, GitHub Integration & App Store Screenshots
+
+**Date:** January 20, 2026
+**Duration:** ~2 hours
+**Focus:** Contact information updates, GitHub repository connection, App Store screenshot replacement
+**Status:** COMPLETED
+
+### Session Goals
+
+1. Update all contact information from support@321grow.com to info@aipulse.pl
+2. Update Apple ID reference from maciek@konieczny.pl to info@aipulse.pl
+3. Connect project to GitHub repository
+4. Replace non-compliant screenshots with App Store-ready versions
+5. Update README.md to showcase screenshots
+
+### Accomplishments
+
+#### 1. Contact Information Updates
+
+**Files Modified:**
+- `APP_STORE_LISTING.md` - Updated support email to info@aipulse.pl
+- `APP_STORE_SUBMISSION_GUIDE.md` - Updated contact email throughout
+- `APP_STORE_ASSETS_CHECKLIST.md` - Updated email reference
+- `PRIVACY_POLICY.md` - Updated contact email in policy document
+- `CLAUDE.md` - Added Apple ID and GitHub repository information
+
+**Key Changes:**
+- Old email: support@321grow.com
+- New email: info@aipulse.pl
+- Old Apple ID: maciek@konieczny.pl
+- New Apple ID: info@aipulse.pl
+- All references systematically updated across 5 documentation files
+
+**Rationale:**
+- Consolidate all project contact points to single AiPulse email
+- Ensure consistency across all App Store submission materials
+- Update Apple ID for proper Xcode signing and certificate management
+
+#### 2. GitHub Repository Integration
+
+**Repository Setup:**
+- Created GitHub repository: https://github.com/AiPulseInc/qr-generator
+- SSH URL: git@github.com:AiPulseInc/qr-generator.git
+- Default branch: main
+- Git user configured: AiPulse Inc <info@aipulse.pl>
+
+**Commits Made:**
+1. **Initial commit** (64bc83e) - "Initial commit: QRGenerator React Native app"
+   - 97 files, 28,564 lines of code
+   - Complete project structure with all source code and documentation
+
+2. **GitHub documentation** (4e09727) - "docs: add GitHub repository information to CLAUDE.md"
+   - Added repository URLs and SSH key fingerprint
+   - Documented git user configuration
+
+3. **First screenshots** (7da9767) - "feat: add App Store screenshots for 6.7" display"
+   - Initial screenshot upload (later replaced)
+
+4. **Screenshot fix** (11371ee) - "fix: replace non-compliant screenshots with App Store ready versions"
+   - Replaced screenshots with Metro banner with clean Release mode screenshots
+   - 5 PNG files: 1290x2796 pixels
+
+5. **README update** (bcdad18) - "docs: add App Store screenshots to README.md"
+   - Added screenshot gallery with table layout
+   - Linked to screenshots/README.md for additional details
+
+**Technical Details:**
+- SSH key fingerprint: SHA256:eomzYPo8d0Y1+T3CLN/5W1DDMPHDW++Zhz7Tm9zpAOc
+- Repository now serves as single source of truth for project
+- Version control enables collaboration and change tracking
+
+#### 3. App Store Screenshots Replacement
+
+**Problem Identified:**
+- Initial screenshots contained Metro development server banner
+- Metro banner violates App Store screenshot guidelines
+- Screenshots needed to show production/release mode only
+
+**Solution Implemented:**
+- Captured 5 new screenshots in Release mode (no Metro banner)
+- Format: PNG (App Store preferred format)
+- Dimensions: 1290x2796 (6.7" iPhone Pro Max)
+- File sizes: 156KB - 185KB each
+
+**Screenshots Created:**
+
+1. **01-url-qr-code.png** (164KB)
+   - Main screen showing URL QR code generation
+   - Default state with www.321grow.pl
+   - Demonstrates primary use case
+
+2. **02-wifi-qr-code.png** (185KB)
+   - WiFi QR code form
+   - Shows WPA security option
+   - Network sharing feature highlight
+
+3. **03-calendar-event.png** (183KB)
+   - Calendar event QR code creation
+   - Date/time picker visible
+   - iCalendar format demonstration
+
+4. **04-email-qr-code.png** (156KB)
+   - Email QR code with mailto format
+   - Subject and body fields shown
+   - Communication feature showcase
+
+5. **05-dark-mode.png** (170KB)
+   - Dark theme demonstration
+   - Shows theme toggle capability
+   - 321 GROW dark branding visible
+
+**File Locations:**
+- App Store versions: `/Users/mk/code-sandbox/QRGenerator/screenshots/app-store/`
+- Alternative location: `/Users/mk/code-sandbox/QRGenerator/screen/`
+- Documentation: `/Users/mk/code-sandbox/QRGenerator/screenshots/README.md`
+
+**Quality Standards Met:**
+- No development overlays or debug information
+- Clean UI with 321 GROW branding visible
+- Production-ready appearance
+- Meets App Store Connect upload requirements
+- Showcases all 5 QR code types
+
+#### 4. README.md Enhancement
+
+**Updates Made:**
+- Added "Screenshots" section with gallery table
+- Embedded 5 App Store screenshots with descriptive captions
+- Added link to screenshots/README.md for detailed information
+- Used centered alignment for professional presentation
+
+**Visual Presentation:**
+- Table layout: 5 columns, 1 row
+- Column headers: URL QR Code, WiFi Sharing, Calendar Event, Email QR Code, Dark Mode
+- Images displayed inline for quick visual reference
+- Maintains professional documentation standards
+
+**Benefits:**
+- Visitors immediately see app functionality
+- GitHub repository becomes more engaging
+- Screenshots serve dual purpose: documentation and marketing
+- Easy for stakeholders to preview app features
+
+### Technical Details
+
+**Files Created:**
+- None (screenshots replaced existing files)
+
+**Files Modified:**
+- `/Users/mk/code-sandbox/QRGenerator/APP_STORE_LISTING.md`
+- `/Users/mk/code-sandbox/QRGenerator/APP_STORE_SUBMISSION_GUIDE.md`
+- `/Users/mk/code-sandbox/QRGenerator/APP_STORE_ASSETS_CHECKLIST.md`
+- `/Users/mk/code-sandbox/QRGenerator/PRIVACY_POLICY.md`
+- `/Users/mk/code-sandbox/QRGenerator/CLAUDE.md`
+- `/Users/mk/code-sandbox/QRGenerator/README.md`
+- `/Users/mk/code-sandbox/QRGenerator/screenshots/README.md`
+- All 5 screenshot files in screenshots/app-store/ directory
+- Corresponding files in screen/ directory
+
+**Total Files Modified:** 12 files
+**Total Git Commits:** 5 commits
+**Lines Changed:** ~50 lines across documentation files
+
+### Design Decisions Made
+
+1. **Email Consolidation**
+   - Decision: Use info@aipulse.pl for all project communications
+   - Rationale: Single point of contact simplifies support and reduces confusion
+   - Impact: All App Store submission materials now consistent
+
+2. **Apple ID Change**
+   - Decision: Update from maciek@konieczny.pl to info@aipulse.pl
+   - Rationale: Align developer account with company email
+   - Impact: Requires update in Xcode Preferences → Accounts before submission
+
+3. **GitHub Repository Structure**
+   - Decision: Public repository under AiPulseInc organization
+   - Rationale: Enable collaboration, version control, and open sharing
+   - Impact: Project now has professional version control and backup
+
+4. **Screenshot Format**
+   - Decision: Use PNG instead of JPEG
+   - Rationale: PNG is lossless and preferred by App Store Connect
+   - Impact: Slightly larger file sizes but maximum quality
+
+5. **Screenshot Content**
+   - Decision: Show Release mode only, no development tools
+   - Rationale: App Store guidelines prohibit development overlays
+   - Impact: Screenshots are now compliant and submission-ready
+
+6. **README Enhancement**
+   - Decision: Add visual screenshot gallery to README
+   - Rationale: Improve project presentation and stakeholder engagement
+   - Impact: Repository is more professional and informative
+
+### Blockers/Issues
+
+**None encountered** - All tasks completed successfully.
+
+**Minor Notes:**
+- app-icon.png exists in root but needs verification for App Store compliance (1024x1024px requirement)
+- Screenshots are 6.7" size; may want to add 6.9" size for newest iPhones (optional)
+
+### Open Questions
+
+None - all aspects of this session's goals were addressed and completed.
+
+### Next Session Priorities
+
+1. **Verify App Icon Compliance**
+   - Check if existing app-icon.png (1015KB) meets requirements
+   - Dimensions must be exactly 1024x1024px
+   - No transparency, no rounded corners, PNG format
+   - If non-compliant, create new icon following guidelines
+
+2. **Host Privacy Policy**
+   - Upload PRIVACY_POLICY.md to public web host
+   - Options: GitHub Pages, Netlify, or custom domain
+   - Obtain HTTPS URL for App Store Connect
+   - Test accessibility before submission
+
+3. **Apple Developer Account Enrollment**
+   - Verify enrollment status at developer.apple.com
+   - Complete enrollment if not already done ($99/year)
+   - Accept all required agreements
+   - Wait for verification (24-48 hours typical)
+
+4. **Configure Xcode Project**
+   - Update Apple ID in Xcode to info@aipulse.pl
+   - Set bundle identifier (e.g., com.aipulse.qrgenerator)
+   - Configure automatic signing
+   - Test build on physical device
+
+5. **Prepare for App Store Connect**
+   - Review all metadata in APP_STORE_LISTING.md
+   - Ensure privacy policy URL is obtained
+   - Confirm all screenshots are final
+   - Verify app icon is ready
+
+### Testing Performed
+
+**Screenshot Verification:**
+- ✅ All 5 screenshots display correctly in README.md
+- ✅ No Metro development banner visible
+- ✅ All screenshots are 1290x2796 pixels
+- ✅ PNG format confirmed
+- ✅ File sizes appropriate (156-185KB)
+- ✅ All QR code types represented
+
+**Git Repository Verification:**
+- ✅ All commits successfully pushed to GitHub
+- ✅ Repository accessible at https://github.com/AiPulseInc/qr-generator
+- ✅ All files present in remote repository
+- ✅ Commit history preserved
+
+**Documentation Consistency:**
+- ✅ All contact email references updated to info@aipulse.pl
+- ✅ Apple ID updated in CLAUDE.md
+- ✅ No remaining references to old email addresses
+- ✅ All App Store documentation consistent
+
+### Performance Impact
+
+N/A - Documentation and asset updates only, no code changes
+
+### Dependencies Added/Changed
+
+None - No package.json modifications
+
+### Documentation Updated
+
+**Updated Files:**
+1. `CLAUDE.md` - Added session history, updated Apple ID, added GitHub info, updated last modified date
+2. `APP_STORE_LISTING.md` - Updated support email
+3. `APP_STORE_SUBMISSION_GUIDE.md` - Updated contact email
+4. `APP_STORE_ASSETS_CHECKLIST.md` - Updated email reference
+5. `PRIVACY_POLICY.md` - Updated contact email
+6. `README.md` - Added screenshot gallery section
+7. `screenshots/README.md` - Updated for PNG format
+8. `SESSION_LOG.md` - (This entry)
+
+**Created Files:**
+- None (session focused on updates and replacements)
+
+### Notes for Next Session
+
+**Important Reminders:**
+- All documentation now references info@aipulse.pl - ensure this email is monitored
+- Apple ID must be updated in Xcode before any code signing activities
+- GitHub repository is now the source of truth - continue committing changes
+- Screenshots are App Store ready - don't replace unless necessary
+- app-icon.png needs verification - this is the last major asset task
+
+**Contact Information Quick Reference:**
+- Support Email: info@aipulse.pl
+- Apple ID: info@aipulse.pl
+- GitHub: https://github.com/AiPulseInc/qr-generator
+- Previous emails: support@321grow.com, maciek@konieczny.pl (deprecated)
+
+**Ready for Submission:**
+- ✅ Screenshots (5 PNG files, 1290x2796)
+- ✅ Privacy Policy (text ready, needs hosting)
+- ✅ All metadata (in APP_STORE_LISTING.md)
+- ✅ Documentation (complete and consistent)
+- ⏳ App Icon (needs verification)
+- ⏳ Privacy Policy URL (needs hosting)
+- ⏳ Apple Developer Account (needs confirmation)
+- ⏳ Xcode Configuration (needs setup)
+
+**Critical Path for Next Sessions:**
+1. Verify/create app icon → 2. Host privacy policy → 3. Apple enrollment → 4. Xcode config → 5. Submit
+
+### Session Statistics
+
+- Documentation files updated: 7
+- Screenshot files replaced: 5
+- Git commits made: 5
+- Total lines committed: 28,564 (initial) + ~50 (updates)
+- Contact email changes: 5 files
+- Time investment: ~2 hours
+- Completion status: 100%
+
+---
+
 ## Session [Date TBD]: App Icon and Visual Assets Creation
 
 **Status:** NOT STARTED
@@ -384,6 +708,6 @@ None
 ---
 
 **Log Started:** 2026-01-19
-**Last Updated:** 2026-01-19
-**Total Sessions:** 1
-**Project Status:** App Store submission preparation phase
+**Last Updated:** 2026-01-20
+**Total Sessions:** 2
+**Project Status:** App Store submission preparation phase - screenshots complete, awaiting app icon and privacy policy hosting

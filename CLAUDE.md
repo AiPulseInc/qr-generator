@@ -4,9 +4,9 @@
 
 **QRGenerator** is a production-ready React Native mobile application (iOS/Android) for generating, customizing, and sharing QR codes. The app is built with TypeScript and follows modern React Native best practices with comprehensive documentation.
 
-**Current Status:** App development complete, ready for App Store submission.
+**Current Status:** App development complete, ready for App Store submission. All documentation updated, screenshots complete, GitHub connected.
 **Version:** 0.0.1
-**Last Updated:** 2026-01-19
+**Last Updated:** 2026-01-20
 
 ---
 
@@ -60,6 +60,35 @@
 ---
 
 ## Recent Major Changes
+
+### Session: 2026-01-20 (Contact Updates, GitHub Integration & Screenshots)
+
+**Accomplishment:** Updated all contact information, connected GitHub repository, and completed App Store-ready screenshots
+
+**Major Updates:**
+1. **Contact Information Updates** - Changed from support@321grow.com to info@aipulse.pl throughout all documentation
+2. **Apple ID Update** - Changed from maciek@konieczny.pl to info@aipulse.pl for Xcode signing
+3. **GitHub Integration** - Connected project to https://github.com/AiPulseInc/qr-generator with 5 commits
+4. **Screenshots Replacement** - Replaced non-compliant screenshots (with Metro banner) with 5 App Store-ready PNG screenshots
+5. **README Update** - Added screenshot gallery displaying all App Store assets
+
+**Files Modified:**
+- APP_STORE_LISTING.md - Updated contact email
+- APP_STORE_SUBMISSION_GUIDE.md - Updated contact email
+- APP_STORE_ASSETS_CHECKLIST.md - Updated contact email
+- PRIVACY_POLICY.md - Updated contact email
+- CLAUDE.md - Added Apple ID and GitHub repository information
+- README.md - Added screenshot gallery section
+- screenshots/README.md - Updated for PNG screenshots
+- All screenshots replaced in screen/ and screenshots/app-store/ directories
+
+**Design Decisions:**
+- Consolidated all contact information to single email: info@aipulse.pl
+- Used Release mode (no Metro banner) for App Store screenshots
+- 5 screenshots showcasing all main features (URL, WiFi, Calendar, Email, Dark Mode)
+- Screenshot dimensions: 1290x2796 (6.7" iPhone Pro Max)
+- PNG format for maximum compatibility and quality
+- GitHub repository established for version control and collaboration
 
 ### Session: 2026-01-19 (App Store Submission Planning)
 
@@ -344,33 +373,40 @@ The application is 100% development-complete. The next phase is **App Store subm
    - 1024x1024px PNG required
    - Must follow design guidelines in screenshots guide
    - Should incorporate 321 GROW branding
+   - Note: app-icon.png exists in root (1015KB) - needs verification for compliance
 
-2. **Generate Screenshots** (Not yet completed)
-   - Follow `APP_STORE_SCREENSHOTS_GUIDE.md`
-   - Minimum: 6.7" and 6.9" iPhone sizes
-   - Recommended: All required sizes
+2. **Generate Screenshots** ✅ COMPLETED (2026-01-20)
+   - 5 App Store-ready screenshots created
+   - Format: PNG, 1290x2796 (6.7" iPhone Pro Max)
+   - Content: URL, WiFi, Calendar, Email, Dark Mode
+   - Location: screenshots/app-store/ directory
+   - Status: Ready for upload to App Store Connect
 
 3. **Host Privacy Policy** (Not yet completed)
    - Upload `PRIVACY_POLICY.md` to web host
    - Get public URL for App Store Connect
    - Suggested: GitHub Pages or Netlify
+   - Note: Privacy policy updated with info@aipulse.pl contact
 
 4. **Apple Developer Account** (Status unknown)
    - Enroll in Apple Developer Program ($99/year)
    - Complete enrollment verification
    - Accept agreements in App Store Connect
+   - Note: Apple ID should be info@aipulse.pl
 
 5. **Configure Xcode Project** (Not yet completed)
    - Set bundle identifier
    - Configure signing certificates
    - Set version and build numbers
    - Test on physical device
+   - Note: Use info@aipulse.pl for signing
 
 6. **Create App Store Connect Listing** (Not yet completed)
    - Follow `APP_STORE_SUBMISSION_GUIDE.md`
    - Use content from `APP_STORE_LISTING.md`
-   - Upload screenshots and app icon
-   - Complete all required metadata
+   - Upload screenshots (ready in screenshots/app-store/)
+   - Upload app icon (verify app-icon.png first)
+   - Complete all required metadata (all updated with info@aipulse.pl)
 
 7. **Build and Submit** (Not yet completed)
    - Archive app in Xcode
@@ -469,11 +505,20 @@ cd ..
 **License:** Private
 **Target Markets:** iOS App Store (primary), Google Play Store (future)
 **Monetization:** Free (as of v0.0.1)
-**Support Contact:** (To be added in privacy policy)
+**Support Contact:** info@aipulse.pl
 
 ---
 
 ## Session History Summary
+
+### 2026-01-20: Contact Updates, GitHub Integration & Screenshots
+- Updated all contact information to info@aipulse.pl (5 documentation files)
+- Changed Apple ID from maciek@konieczny.pl to info@aipulse.pl
+- Connected project to GitHub (https://github.com/AiPulseInc/qr-generator)
+- Made 5 commits: initial commit, GitHub info, screenshots (x2), README update
+- Replaced non-compliant screenshots with 5 App Store-ready PNG screenshots
+- Updated README.md with screenshot gallery
+- Screenshots now ready for App Store submission
 
 ### 2026-01-19: App Store Documentation Creation
 - Created complete App Store submission package
@@ -513,6 +558,6 @@ When continuing work on this project:
 
 ---
 
-**Last Updated:** 2026-01-19
+**Last Updated:** 2026-01-20
 **Updated By:** Claude (Session Close-Out)
-**Next Review:** After first App Store submission attempt
+**Next Review:** After hosting privacy policy or completing app icon

@@ -6,6 +6,44 @@ This guide walks you through the entire App Store submission process from start 
 
 ---
 
+## 📋 Quick Reference: What to Skip on 2nd App
+
+Each section is marked with one of these labels:
+
+- **🔵 ONE-TIME ONLY** - Do this once, skip entirely for 2nd app
+- **🟢 EVERY APP** - Must do for each new app you submit
+- **🟡 EVERY VERSION** - Must do for each app update
+
+**For your SECOND app submission:**
+- Skip all 🔵 sections (already done)
+- Focus on 🟢 sections (new app setup)
+- Estimated time: **2-4 hours** (vs 1-2 weeks for first app)
+
+**Label Breakdown:**
+
+**🔵 ONE-TIME ONLY:**
+- Apple Developer Program Enrollment
+- App Store Connect Setup (Agreements, Tax, Banking)
+- First Submission Tips
+
+**🟢 EVERY APP:**
+- Create App ID and Bundle Identifier
+- Xcode Project Configuration
+- Completing App Store Information (metadata, screenshots)
+- Submitting for Review
+
+**🟡 EVERY VERSION:**
+- Building and Archiving
+- Uploading to App Store Connect
+- Updating Your App
+
+**Reference Material (No Label):**
+- Common Rejection Reasons
+- Troubleshooting
+- Resources
+
+---
+
 ## Table of Contents
 
 1. [Prerequisites](#prerequisites)
@@ -68,7 +106,13 @@ Before you begin, ensure you have:
 
 ---
 
-## Apple Developer Program Enrollment
+## Apple Developer Program Enrollment 🔵 ONE-TIME ONLY
+
+**Skip this section if you already have an active Apple Developer account.**
+
+This entire section is one-time setup. Once enrolled, you can submit unlimited apps.
+
+---
 
 ### Step 1: Visit Apple Developer Website
 
@@ -148,19 +192,25 @@ You'll receive:
 
 ---
 
-## App Store Connect Setup
+## App Store Connect Setup 🔵 ONE-TIME ONLY
+
+**Skip this section if you've already submitted an app before.**
+
+Agreements, tax, and banking are one-time setup. You only need to do Part 3 (Create App ID) for each new app.
 
 Once enrolled, set up App Store Connect.
 
-### Part 1: Initial Access
+### Part 1: Initial Access 🔵 ONE-TIME ONLY
 
 1. Go to https://appstoreconnect.apple.com
 2. Sign in with your Apple ID
 3. **First-time setup wizard will appear**
 
-### Part 2: Agreements, Tax, and Banking
+### Part 2: Agreements, Tax, and Banking 🔵 ONE-TIME ONLY
 
 **This is required before you can submit apps.**
+
+**For 2nd app:** Skip this entirely - already set up!
 
 #### Paid Applications Agreement
 
@@ -220,7 +270,11 @@ Once enrolled, set up App Store Connect.
 
 ---
 
-### Part 3: Create App ID and Bundle Identifier
+### Part 3: Create App ID and Bundle Identifier 🟢 EVERY APP
+
+**You must do this for EACH new app you submit.**
+
+Each app needs its own unique Bundle ID (e.g., com.321grow.app1, com.321grow.app2, etc.)
 
 #### In App Store Connect
 
@@ -284,7 +338,9 @@ Once enrolled, set up App Store Connect.
 
 ---
 
-### Part 4: App Information
+### Part 4: App Information 🟢 EVERY APP
+
+**Must complete for each new app.**
 
 After creating the app, you'll be taken to the app's page. Complete the **App Information** section:
 
@@ -309,7 +365,9 @@ After creating the app, you'll be taken to the app's page. Complete the **App In
 
 ---
 
-### Part 5: Pricing and Availability
+### Part 5: Pricing and Availability 🟢 EVERY APP
+
+**Set pricing for each new app.**
 
 1. Navigate to **"Pricing and Availability"**
 
@@ -328,7 +386,11 @@ After creating the app, you'll be taken to the app's page. Complete the **App In
 
 ---
 
-## Xcode Project Configuration
+## Xcode Project Configuration 🟢 EVERY APP
+
+**Configure each new app project.**
+
+For 2nd app: Familiar process, but must configure new Bundle ID, version, signing, etc.
 
 Now configure your Xcode project for App Store submission.
 
@@ -527,7 +589,13 @@ Before archiving, clean the build:
 
 ---
 
-## Building and Archiving
+## Building and Archiving 🟢 EVERY APP / 🟡 EVERY VERSION
+
+**Must do for each new app and each update.**
+
+For 2nd app: Same process, already familiar!
+
+---
 
 ### Step 1: Select Build Destination
 
@@ -657,7 +725,13 @@ Before uploading, validate the archive:
 
 ---
 
-## Uploading to App Store Connect
+## Uploading to App Store Connect 🟢 EVERY APP / 🟡 EVERY VERSION
+
+**Upload for each new app and update.**
+
+For 2nd app: Same process as first app!
+
+---
 
 ### Step 1: Upload Archive
 
@@ -748,7 +822,11 @@ When build shows "Missing Compliance":
 
 ---
 
-## Completing App Store Information
+## Completing App Store Information 🟢 EVERY APP
+
+**Must complete for each new app.**
+
+For 2nd app: You already know what fields to fill! Most content can be reused/adapted from first app.
 
 While waiting for build to process (or after), complete your App Store listing.
 
@@ -1055,7 +1133,11 @@ Click **"Save"** button at top right frequently.
 
 ---
 
-## Submitting for Review
+## Submitting for Review 🟢 EVERY APP / 🟡 EVERY VERSION
+
+**Must do for each new app and each update.**
+
+For 2nd app: Same process! But you'll be much faster the second time.
 
 ### Final Pre-Submission Checklist
 
@@ -1147,7 +1229,11 @@ You'll see:
 
 ---
 
-## Review Process
+## Review Process 🟢 EVERY APP / 🟡 EVERY VERSION
+
+**Happens for each submission - initial app and all updates.**
+
+For 2nd app: Same review process, but you'll know what to expect!
 
 ### What to Expect
 
@@ -1323,7 +1409,11 @@ If your app is rejected:
 
 ---
 
-## After Approval
+## After Approval 🟢 EVERY APP / 🟡 EVERY VERSION
+
+**Happens after each successful review - initial app and all updates.**
+
+For 2nd app: Same release process, but much more exciting the second time!
 
 ### Release Your App
 
@@ -1420,7 +1510,11 @@ Start planning version 1.1.0:
 
 ---
 
-## Updating Your App
+## Updating Your App 🟡 EVERY VERSION
+
+**Only applies to app updates (version 1.1.0, 1.2.0, etc.).**
+
+For 2nd app: This section is about updating existing apps, not submitting new ones.
 
 For future updates:
 
@@ -1579,7 +1673,11 @@ You've successfully submitted when:
 
 ---
 
-## First Submission Tips
+## First Submission Tips 🔵 ONE-TIME ONLY
+
+**Only relevant for your very first app submission.**
+
+For 2nd app: You already know these! Skip this section.
 
 1. **Don't rush** - Take time to review everything
 2. **Test thoroughly** - More testing = fewer rejections

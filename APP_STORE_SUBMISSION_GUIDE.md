@@ -474,7 +474,7 @@ Review required capabilities for your app:
 ### Step 7: Info.plist Verification
 
 1. Open `Info.plist` file
-   - Location: `QRGenerator/Info.plist`
+   - Location: `ios/QRGenerator/Info.plist`
 
 2. **Verify required keys exist:**
 

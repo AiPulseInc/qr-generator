@@ -638,7 +638,15 @@ Before uploading, validate the archive:
    - **Warnings:** Review and address if critical
    - **Errors:** Must fix before uploading
 
-**Common validation errors:**
+**Common validation warnings (can ignore):**
+- **dSYM hermesvm.framework warning** - Very common in React Native apps, safe to ignore
+  - Message: "The archive did not include a dSYM for the hermesvm.framework..."
+  - This is a Hermes (JavaScript engine) debug symbols issue
+  - Does NOT prevent submission
+  - Thousands of React Native apps in App Store have this
+  - Click "Next" and proceed with upload
+
+**Common validation errors (must fix):**
 - Missing app icon
 - Invalid bundle ID
 - Missing privacy permission descriptions
@@ -779,9 +787,21 @@ Generate professional QR codes in seconds! Create codes for URLs, WiFi networks,
 
 Copy the full description from APP_STORE_LISTING.md.
 
+⚠️ **IMPORTANT - Special Characters Warning:**
+App Store Connect may reject descriptions with certain special characters:
+- ❌ **Avoid:** Fancy stars (★), checkmarks (✓), X marks (❌), emoji symbols (📱💼🎓🏪)
+- ✅ **Safe:** Standard bullets (•), hyphens (-), basic punctuation (.,!?;:)
+- ✅ **Safe:** Line breaks, numbers, standard letters
+
+If you get error "This field contains one or more invalid characters":
+- Remove all fancy Unicode symbols
+- Use plain text headers instead of ★ symbols
+- Replace emojis with text (e.g., "Personal Use" instead of "📱 Personal Use")
+- See `APP_STORE_DESCRIPTION_CLEAN.txt` for pre-cleaned version
+
 **Tips:**
 - Use line breaks for readability
-- Include emojis if desired (sparingly)
+- Keep it simple and clean
 - Highlight key features
 - Mention privacy/security
 - Include call to action
@@ -879,40 +899,94 @@ Or:
 
 #### Age Rating
 
-Click **"Edit"** next to Age Rating:
+Click **"Edit"** next to Age Rating.
 
-**For QRGenerator:**
-- All answers should be **"None"**:
-  - Cartoon/Fantasy Violence: None
-  - Realistic Violence: None
-  - Sexual Content: None
-  - Profanity: None
-  - Horror/Fear: None
-  - Mature/Suggestive Themes: None
-  - Alcohol/Tobacco/Drugs: None
-  - Simulated Gambling: None
-  - Medical/Treatment Info: None
-  - Unrestricted Web Access: **None** (important!)
+⚠️ **IMPORTANT:** You must select a **frequency level** for EACH category (not just answer yes/no).
+
+**For QRGenerator - Select "None" for ALL categories:**
+
+| Content Type | Frequency |
+|--------------|-----------|
+| Cartoon or Fantasy Violence | **None** |
+| Realistic Violence | **None** |
+| Sexual Content or Nudity | **None** |
+| Profanity or Crude Humor | **None** |
+| Horror/Fear Themes | **None** |
+| Mature/Suggestive Themes | **None** |
+| Alcohol, Tobacco, or Drug Use/References | **None** |
+| Simulated Gambling | **None** |
+| Medical/Treatment Information | **None** |
+| Unrestricted Web Access | **None** ⚠️ |
+| Gambling and Contests | **None** |
+
+⚠️ **Critical:** "Unrestricted Web Access" should be **"None"**
+- Your app generates QR codes but doesn't browse the web
+- Users might create URL QR codes, but that's not in-app web browsing
+- Select "None" to avoid unnecessary restrictions
   - User Generated Content: None
 
 **Result:** Age Rating 4+
 
 Click **"Done"**
 
-### Step 5: App Review Information
+### Step 5: App Privacy (REQUIRED)
+
+⚠️ **CRITICAL:** This is a required section that must be completed before submission.
+
+**Where to find it:**
+1. Navigate to **"App Privacy"** tab in App Store Connect (top menu or left sidebar)
+2. Click **"Get Started"** or **"Edit"**
+
+**What to answer:**
+
+#### Question: "Do you or your third-party partners collect data from this app?"
+
+**Answer: NO** ✅
+
+**Why "No"?**
+- Your app doesn't collect any user data
+- All QR generation happens locally on device
+- No analytics, no tracking, no server communication
+- No third-party SDKs that collect data
+
+#### After selecting "No":
+
+You'll see a summary:
+- **Data Collection:** No data collected
+- **App Store Label:** Will show "No Data Collected"
+
+Click **"Publish"** to save.
+
+**Result:** Your app will display "No Data Collected" badge on the App Store, which builds user trust! ✅
+
+---
+
+### Step 6: App Review Information
 
 This section is for the App Store review team.
+
+**Where to find it:**
+1. In App Store Connect, go to **"App Store"** tab
+2. Select your version (e.g., "1.0 Prepare for Submission")
+3. **Scroll down** to **"App Review Information"** section
+4. Fill in the required fields
 
 #### Sign-in Required
 
 - **No** (QRGenerator doesn't require login)
 
-#### Contact Information
+#### Contact Information (REQUIRED)
 
+⚠️ **Note:** This is where Apple complained about missing contact info!
+
+Fill in all fields:
 - **First Name:** Your first name
 - **Last Name:** Your last name
-- **Phone Number:** +1 (XXX) XXX-XXXX
+- **Phone Number:** +48 XXX XXX XXX (or your country code)
 - **Email:** info@aipulse.pl
+
+**Purpose:** Apple uses this to contact you during review if they have questions.
+**Privacy:** Not shown to users publicly.
 
 #### Notes
 
@@ -985,20 +1059,43 @@ Click **"Save"** button at top right frequently.
 
 ### Final Pre-Submission Checklist
 
-Before clicking submit, verify:
+Before clicking submit, verify all these items:
 
-- [ ] Build is selected (shows "Build 1" or your build number)
-- [ ] All screenshots uploaded (at least one device size)
-- [ ] Description is complete and compelling
-- [ ] Keywords are optimized
-- [ ] Privacy policy URL is working
-- [ ] Support URL is working
-- [ ] Age rating is set (4+)
-- [ ] Export compliance completed
-- [ ] App review information filled out
-- [ ] "What's New" section completed
-- [ ] No placeholder text anywhere
-- [ ] All required fields have green checkmarks ✓
+#### Required Assets
+- [ ] **Build selected** (shows "Build 1" or your build number)
+- [ ] **Screenshots uploaded** (at least 2 for 6.7" display)
+- [ ] **App icon** showing correctly (1024x1024)
+
+#### Metadata (App Store Tab)
+- [ ] **Description** complete (NO special characters ★✓❌📱)
+- [ ] **Promotional text** filled in (170 chars)
+- [ ] **Keywords** optimized (100 chars)
+- [ ] **Copyright** filled in (© 2025 321 GROW)
+- [ ] **"What's New"** section completed
+
+#### URLs (All Required!)
+- [ ] **Privacy Policy URL** working and accessible
+- [ ] **Support URL** working
+- [ ] **Marketing URL** (optional - can leave blank)
+
+#### App Privacy Tab ⚠️
+- [ ] **App Privacy completed** - Selected "No data collected"
+- [ ] **Privacy status: Published**
+
+#### Age Rating
+- [ ] **Age Rating completed** - Selected "None" for ALL categories
+- [ ] **Result shows 4+**
+
+#### App Review Information ⚠️
+- [ ] **Contact Information filled** (First name, Last name, Phone, Email)
+- [ ] **Notes for reviewer** added
+- [ ] **Sign-in required: No**
+
+#### Export Compliance
+- [ ] **Export compliance answered** (encryption question)
+- [ ] **Build status: Ready to Submit** (not "Missing Compliance")
+
+**If all checkmarks are complete, you're ready to submit!** ✅
 
 ### Select Build
 

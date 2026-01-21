@@ -1,0 +1,94 @@
+Transform the way you share information with QRGenerator, the professional QR code creation tool designed for iOS. Whether you're sharing WiFi credentials with guests, creating event invitations, or generating website links, QRGenerator makes it effortless.
+
+KEY FEATURES
+
+• URL QR CODES
+Generate scannable links to websites, online menus, social media profiles, or any web destination. Perfect for business cards, marketing materials, and contact-free information sharing.
+
+• WIFI QR CODES
+Share your WiFi network instantly without typing passwords. Guests simply scan the code to connect automatically. Supports WPA, WEP, and open networks.
+
+• CALENDAR EVENT QR CODES
+Create shareable event invitations with full details including title, location, date, time, and description. Recipients can add events to their calendar with a single scan.
+
+• SMS QR CODES
+Pre-populate text messages with custom recipients and message content. Great for text-to-vote campaigns, customer support shortcuts, and automated messaging.
+
+• EMAIL QR CODES
+Generate mailto codes with pre-filled recipient, subject, and body text. Streamline customer inquiries and contact forms.
+
+POWERFUL CAPABILITIES
+
+• Custom Color Selection - Choose any color for your QR codes to match your branding
+• Instant Preview - See your QR code as you type
+• High-Resolution Export - Save to photo library in crisp, scannable quality
+• Share Anywhere - Export to Messages, Email, AirDrop, and more
+• Professional Design - Clean, modern interface from 321 GROW
+• Lightning Fast - Generate codes instantly without delays
+• Works Offline - No internet connection required
+
+PRIVACY FIRST
+
+Your privacy matters. QRGenerator processes everything locally on your device:
+• No data collection
+• No account required
+• No internet connection needed
+• No analytics or tracking
+• Your information never leaves your device
+
+PERFECT FOR
+
+Personal Use
+- Share WiFi with family and friends
+- Create digital business cards
+- Generate event invitations
+- Simplify contact sharing
+
+Business and Professional
+- Restaurant menus and table ordering
+- Real estate property information
+- Event check-in and registration
+- Marketing campaigns
+- Product information and manuals
+- Conference and networking events
+
+Education
+- Classroom resource sharing
+- Assignment submission links
+- Event announcements
+- Quick polls and surveys
+
+Retail and Hospitality
+- Customer WiFi access
+- Payment links
+- Product information
+- Special offers and promotions
+- Contact-free menus
+
+WHY CHOOSE QRGENERATOR?
+
+Unlike other QR code apps, QRGenerator focuses on what matters: speed, privacy, and professional results. No subscriptions, no ads, no complicated features you'll never use. Just five essential QR code types done exceptionally well.
+
+The app is built by 321 GROW, committed to creating tools that respect your privacy and simplify your digital life.
+
+EASY TO USE
+
+1. Select your QR code type
+2. Fill in the information
+3. Customize the color (optional)
+4. Save or share instantly
+
+That's it! No tutorials needed, no learning curve.
+
+TECHNICAL EXCELLENCE
+
+• Optimized for all iPhone models
+• Full iOS Dark Mode support
+• VoiceOver accessibility
+• Regular updates and improvements
+• Built with React Native for smooth performance
+
+Download QRGenerator today and discover the simplest way to create and share QR codes on iOS.
+
+Have questions or feedback? Contact us at info@aipulse.pl
+Learn more at www.321grow.com

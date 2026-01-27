@@ -268,6 +268,44 @@ Once enrolled, set up App Store Connect.
 
 **Wait for processing:** This can take 24-48 hours to fully process.
 
+#### EU Trader Status (Required for EU Distribution) 🔵 ONE-TIME ONLY
+
+⚠️ **CRITICAL:** Without this, your app will NOT be available in EU countries!
+
+This is required by the **EU Digital Services Act (DSA)** that Apple implemented in 2024. You must declare your "Trader Status" to distribute apps in the European Union.
+
+**Where to find it:**
+1. Go to **App Store Connect** → **Business** (top navigation)
+2. Or: **Users and Access** → **Business**
+3. Look for **"Trader Status"** section
+
+**Choose your status:**
+
+| Status | When to Use | Required Information |
+|--------|-------------|---------------------|
+| **Trader** | You're a registered business | Business name, address, registration number, contact info |
+| **Non-Trader** | Individual/hobby developer | Basic contact information |
+
+**For Trader status, provide:**
+- Legal business name
+- Business address (full address in EU-compatible format)
+- Business registration number (if applicable)
+- Contact email
+- Phone number
+
+**For QRGenerator (321 GROW / 321 Tech Lab):**
+- Status: **Trader** (if registered business) or **Non-Trader** (if individual)
+- Business Name: 321 Tech Lab / 321 GROW
+- Email: info@aipulse.pl
+- Address: Your business address
+
+**After completing:**
+- Save changes
+- Status updates within **24-48 hours**
+- Your app becomes available in EU countries
+
+**Symptom if missing:** App shows "Ready for Distribution" but is not visible on App Store (especially in EU countries). Direct link shows "App not available."
+
 ---
 
 ### Part 3: Create App ID and Bundle Identifier 🟢 EVERY APP
@@ -1176,6 +1214,13 @@ Before clicking submit, verify all these items:
 #### Export Compliance
 - [ ] **Export compliance answered** (encryption question)
 - [ ] **Build status: Ready to Submit** (not "Missing Compliance")
+
+#### EU Trader Status (One-Time) ⚠️
+- [ ] **Trader Status provided** in Business settings
+- [ ] **Status:** Trader or Non-Trader selected
+- [ ] **Required info completed** (business name, address, contact if Trader)
+
+**Note:** Without EU Trader Status, your app will show "Ready for Distribution" but won't be visible on the App Store in EU countries!
 
 **If all checkmarks are complete, you're ready to submit!** ✅
 

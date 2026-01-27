@@ -158,6 +158,36 @@ This document captures the actual issues encountered during the first App Store 
 
 ---
 
+### 8. EU Trader Status Not Provided (Post-Approval Blocker)
+
+**Issue:**
+- App was approved and showed "Ready for Distribution" status
+- Set to automatic release, but app never appeared on App Store
+- Direct link worked from developer account but showed "App not available" on other devices
+- Waited 5+ days with no visibility
+- Root cause: "Trader Status Not Provided" for EU countries
+
+**Solution:**
+- ✅ Navigate to App Store Connect → Business → Trader Status
+- ✅ Declare status as "Trader" (business) or "Non-Trader" (individual)
+- ✅ Provide required information (business name, address, registration number, contact)
+- ✅ App became available in EU within 24-48 hours after completing
+
+**Added to guide:**
+- New section in "Agreements, Tax, and Banking" explaining EU Trader Status
+- Marked as 🔵 ONE-TIME ONLY (set once, applies to all apps)
+- Added to Final Pre-Submission Checklist
+- Clear warning about symptoms (approved but not visible)
+
+**Background:**
+- Required by EU Digital Services Act (DSA) implemented by Apple in 2024
+- Without this, apps won't be distributed in EU countries
+- This is a one-time setup, not per-app
+
+**Lesson:** Even after Apple approval, missing business compliance settings can block distribution. Check all account-level settings, not just app-level settings.
+
+---
+
 ## Summary of Guide Updates
 
 ### Sections Added:
@@ -166,9 +196,10 @@ This document captures the actual issues encountered during the first App Store 
 3. **App Privacy complete walkthrough** - New Step 5
 4. **Age Rating frequency table** - Updated with table format
 5. **Contact Information precise location** - App Review Information section
+6. **EU Trader Status** - New subsection in Agreements, Tax, and Banking (one-time setup)
 
 ### Sections Enhanced:
-1. **Final Pre-Submission Checklist** - Reorganized into categories with all requirements
+1. **Final Pre-Submission Checklist** - Reorganized into categories with all requirements, added EU Trader Status check
 2. **Info.plist path** - Already correct but reconfirmed
 3. **Common issues** - Added React Native-specific items
 
@@ -182,8 +213,8 @@ This document captures the actual issues encountered during the first App Store 
 - Issue resolution: ~1 hour (with guide updates)
 - **Total:** ~3-4 hours for first submission
 
-### Issues Encountered: 7
-### Issues Resolved: 7 ✅
+### Issues Encountered: 8
+### Issues Resolved: 8 ✅
 ### Submission Success: Yes ✅
 
 ---
@@ -268,8 +299,8 @@ All bottlenecks now addressed in updated guide.
 - **Lines of documentation:** ~1,500 lines in submission guide
 - **Time saved in future:** Estimated 2-3 hours (issues already solved)
 - **Submission attempts:** 1 (successful)
-- **Issues encountered:** 7 (all resolved)
-- **Guide updates:** 8 major sections
+- **Issues encountered:** 8 (all resolved)
+- **Guide updates:** 9 major sections
 
 ---
 
